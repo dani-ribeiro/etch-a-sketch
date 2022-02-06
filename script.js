@@ -5,7 +5,7 @@ setupGrid();
 clearBtn.addEventListener('click', () => reloadGrid());
 
 function setupGrid(){
-    const numGridRowsCols = prompt("Enter how large the grid should be (Ex: '64' creates a 64x64 grid) max: 100");
+    const numGridRowsCols = prompt("Enter grid size (Example: '64' creates a 64x64 grid)");
     container.style.gridTemplateColumns = `repeat(${numGridRowsCols}, auto)`;
 
     for(let i=0;i<numGridRowsCols;i++){
